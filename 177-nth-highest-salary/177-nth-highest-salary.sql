@@ -4,7 +4,7 @@ BEGIN
   SET N1 = N-1;
   RETURN (
       # Write your MySQL query statement below.
-    SELECT distinct(salary)  
+    SELECT DISTINCT(salary)  
     FROM Employee
     ORDER BY salary DESC LIMIT N1, 1
   );
