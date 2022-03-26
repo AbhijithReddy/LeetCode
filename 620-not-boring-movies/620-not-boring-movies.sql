@@ -5,6 +5,7 @@ movie,
 description,
 rating
 FROM Cinema
-WHERE id % 2 <> 0 AND 
-description NOT LIKE '%boring%'
+WHERE 
+description <> 'boring' AND
+id % 2 = 1 
 ORDER BY rating DESC
